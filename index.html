@@ -1,33 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>DOM Play</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
  </head>
+ <style>
+    .hamlet{
+     /*   background-color: lightPink; */
+    }
+    .skull{
+    /*    background-color: white; */
+    }
+/*
+    #play span{
+        background-color:lightPink;
+    }
+     */
+ </style>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>DOM Play</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="#" target="_blank">DOM Play</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
      
    <main class="wrapper">
-    <p>Content goes here</p>
+        <div id="play">
+    <p>Purpose: This webpage is to make it easier for actors to rehearse their lines by being able to touch the name of the character they are playing and highlight their names.
+    </p>
+    <h2>SCENE I. Verona. A public place.</h2>
+    <p><b>Enter SAMPSON and GREGORY, of the house of Capulet, armed with swords and bucklers</b></p>
+    <p><span data-actor="sampson">Sampson: Gregory, o' my word, we'll not carry coals.</span></p>
+    <p><span data-actor="gregory">Gregory: No, for then we should be colliers.</span></p>
+    <p><span data-actor="sampson">Sampson: I mean, an we be in choler, we'll draw.</span></p>
+    <p><span data-actor="gregory">Gregory: Ay, while you live, draw your neck out o' the collar.</span></p>
+    <p><span data-actor="sampson">Sampson: I strike quickly, being moved.</span></p>
+    <p><span data-actor="gregory">Gregory: But thou art not quickly moved to strike.</span></p>
+    <p><span data-actor="sampson">Sampson: A dog of the house of Montague moves me.</span></p>
+    <p><span data-actor="gregory">Gregory: To move is to stir; and to be valiant is to stand: 
+        therefore, if thou art moved, thou runn'st away.</span></p>
+    <p><span data-actor="sampson">Sampson: A dog of that house shall move me to stand: I will
+        take the wall of any man or maid of Montague's.</span></p>
+    <p><span data-actor="gregory">Gregory: That shows thee a weak slave; for the weakest goes
+        to the wall.</span></p>
+    <p><span data-actor="sampson">Sampson: True; and therefore women, being the weaker vessels,
+        are ever thrust to the wall: therefore I will push
+        Montague's men from the wall, and thrust his maids
+        to the wall.</span></p>
+    <p><span data-actor="gregory">Gregory: The quarrel is between our masters and us their men.</span></p>
+    <p><span data-actor="sampson">Sampson: 'Tis all one, I will show myself a tyrant: when I
+        have fought with the men, I will be cruel with the
+        maids, and cut off their heads.</span></p>
+    <p><span data-actor="gregory">Gregory: The heads of the maids?</span></p>
+    <p><span data-actor="sampson">Sampson: Ay, the heads of the maids, or their maidenheads;
+        take it in what sense thou wilt.</span></p>
+    <p><span data-actor="gregory">Gregory: They must take it in sense that feel it.</span></p>
+    <p><span data-actor="sampson">Sampson: Me they shall feel while I am able to stand: and
+        'tis known I am a pretty piece of flesh.</span></p>
+    <p><span data-actor="gregory">Gregory: 'Tis well thou art not fish; if thou hadst, thou
+        hadst been poor John. Draw thy tool! here comes
+        two of the house of the Montagues.</span></p>
+    <p><span data-actor="sampson">Sampson: My naked weapon is out: quarrel, I will back thee.</span></p>
+    <p><span data-actor="gregory">Gregory: How! turn thy back and run?</span></p>
+    <p><span data-actor="sampson">Sampson: Fear me not.</span></p>
+    <p><span data-actor="gregory">Gregory: No, marry; I fear thee!</span></p>
+    <p><span data-actor="sampson">Sampson: 
+        Let us take the law of our sides; let them begin.</span></p>
+    <p><span data-actor="gregory">Gregory: I will frown as I pass by, and let them take it as
+        they list.</span></p>
+    <p><span data-actor="sampson">Sampson: Nay, as they dare. I will bite my thumb at them;
+        which is a disgrace to them, if they bear it.</span></p>
+    <p><b>Enter ABRAHAM and BALTHASAR</b>></p>
+    <p><span data-actor="abraham">Abraham: Do you bite your thumb at us, sir?</span></p>
+    <p><span data-actor="sampson">Sampson: I do bite my thumb, sir.</span></p>
+    <p><span data-actor="abraham">Abraham: Do you bite your thumb at us, sir?</span></p>
+    <p><span data-actor="sampson">Sampson: [Aside to GREGORY] Is the law of our side, if I say
+        ay?</span></p>
+    <p><span data-actor="gregory">Gregory: No.</span></p>
+    <p><span data-actor="sampson">Sampson: No, sir, I do not bite my thumb at you, sir, but I
+        bite my thumb, sir.</span></p>
+    <p><span data-actor="gregory">Gregory: Do you quarrel, sir?</span></p>
+    <p><span data-actor="abraham">Abraham: Quarrel sir! no, sir.</span></p>
+    <p><span data-actor="sampson">Sampson: If you do, sir, I am for you: I serve as good a man as you.</span></p>
+    <p><span data-actor="abraham">Abraham: No better.</span></p>
+    <p><span data-actor="sampson">Sampson: Well, sir.</span></p> 
+    <p><span data-actor="gregory">Gregory: Say 'better:' here comes one of my master's kinsmen.</span></p>
+    <p><span data-actor="sampson">Sampson: Yes, better, sir.</span></p> 
+    <p><span data-actor="abraham">Abraham: You lie.</span></p>
+    <p><span data-actor="sampson">Sampson: Draw, if you be men. Gregory, remember thy swashing blow.</span></p> 
+    <p><b>They fight</b></p>
+
+    <!--
+    <p><span data-actor="abraham">Abraham: </span></p>
+    <p><span data-actor="gregory">Gregory: </span></p>
+    <p><span data-actor="sampson">Sampson: </span></p> 
+    -->    
+
+        </div>
      <footer>
-      <p><small>&copy; 2021 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+      <p><small>&copy; 2023 by 
+          Kady Tran, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
     </footer>
   </main>
   <script src="js/main.js"></script>
+  <script src="js/dom-play.js"></script>
  </body>
 </html>
